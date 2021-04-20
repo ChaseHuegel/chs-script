@@ -1,0 +1,182 @@
+[04/20/21] Info      : --->Prepared to write to the log
+[04/20/21] Info      : //=============================================//
+[04/20/21] Info      : //   INITIALIZING NEW SESSION
+[04/20/21] Info      : //=============================================//
+[04/20/21] Success   : clear
+[04/20/21] Success   : Scipt Action : CLEAR 
+[04/20/21] Success   : seed
+[04/20/21] Success   : Scipt Action : SEED 
+[04/20/21] Success   : show_splash
+[04/20/21] Success   : func set_title "Initialization"
+[04/20/21] Success   : Scipt Action : CALL FUNCTION set_title
+[04/20/21] Success   : Scipt Action : SET TITLE Initialization
+[04/20/21] Success   : sound loop sounds\ghastly.wav
+[04/20/21] Success   : Scipt Action : SOUND LOOP sounds\ghastly.wav
+[04/20/21] Success   : write [Creating color variables...]
+[04/20/21] Success   : Scipt Action : COUT Creating color variables...
+[04/20/21] Success   : break
+[04/20/21] Success   : Scipt Action : LINEBREAK 
+[04/20/21] Success   : int blue
+[04/20/21] Success   : Scipt Action : CREATE INT blue
+[04/20/21] Success   : int green
+[04/20/21] Success   : Scipt Action : CREATE INT green
+[04/20/21] Success   : int cyan
+[04/20/21] Success   : Scipt Action : CREATE INT cyan
+[04/20/21] Success   : int red
+[04/20/21] Success   : Scipt Action : CREATE INT red
+[04/20/21] Success   : int magenta
+[04/20/21] Success   : Scipt Action : CREATE INT magenta
+[04/20/21] Success   : int brown
+[04/20/21] Success   : Scipt Action : CREATE INT brown
+[04/20/21] Success   : int light_gray
+[04/20/21] Success   : Scipt Action : CREATE INT light_gray
+[04/20/21] Success   : int dark_gray
+[04/20/21] Success   : Scipt Action : CREATE INT dark_gray
+[04/20/21] Success   : int light_blue
+[04/20/21] Success   : Scipt Action : CREATE INT light_blue
+[04/20/21] Success   : int light_green
+[04/20/21] Success   : Scipt Action : CREATE INT light_green
+[04/20/21] Success   : int light_cyan
+[04/20/21] Success   : Scipt Action : CREATE INT light_cyan
+[04/20/21] Success   : int light_red
+[04/20/21] Success   : Scipt Action : CREATE INT light_red
+[04/20/21] Success   : int light_magenta
+[04/20/21] Success   : Scipt Action : CREATE INT light_magenta
+[04/20/21] Success   : int yellow
+[04/20/21] Success   : Scipt Action : CREATE INT yellow
+[04/20/21] Success   : int white
+[04/20/21] Success   : Scipt Action : CREATE INT white
+[04/20/21] Success   : write [Setting color variables...]
+[04/20/21] Success   : Scipt Action : COUT Setting color variables...
+[04/20/21] Success   : break
+[04/20/21] Success   : Scipt Action : LINEBREAK 
+[04/20/21] Success   : int blue = 1
+[04/20/21] Success   : Scipt Action : SET INT blue
+[04/20/21] Success   : int green = 2
+[04/20/21] Success   : Scipt Action : SET INT green
+[04/20/21] Success   : int cyan = 3
+[04/20/21] Success   : Scipt Action : SET INT cyan
+[04/20/21] Success   : int red = 4
+[04/20/21] Success   : Scipt Action : SET INT red
+[04/20/21] Success   : int magenta = 5
+[04/20/21] Success   : Scipt Action : SET INT magenta
+[04/20/21] Success   : int brown = 6
+[04/20/21] Success   : Scipt Action : SET INT brown
+[04/20/21] Success   : int light_gray = 7
+[04/20/21] Success   : Scipt Action : SET INT light_gray
+[04/20/21] Success   : int dark_gray = 8
+[04/20/21] Success   : Scipt Action : SET INT dark_gray
+[04/20/21] Success   : int light_blue = 9
+[04/20/21] Success   : Scipt Action : SET INT light_blue
+[04/20/21] Success   : int light_green = 10
+[04/20/21] Success   : Scipt Action : SET INT light_green
+[04/20/21] Success   : int light_cyan = 11
+[04/20/21] Success   : Scipt Action : SET INT light_cyan
+[04/20/21] Success   : int light_red = 12
+[04/20/21] Success   : Scipt Action : SET INT light_red
+[04/20/21] Success   : int light_magenta = 13
+[04/20/21] Success   : Scipt Action : SET INT light_magenta
+[04/20/21] Success   : int yellow = 14
+[04/20/21] Success   : Scipt Action : SET INT yellow
+[04/20/21] Success   : int white = 15
+[04/20/21] Success   : Scipt Action : SET INT white
+[04/20/21] Success   : write [Creating player variables...]
+[04/20/21] Success   : Scipt Action : COUT Creating player variables...
+[04/20/21] Success   : break
+[04/20/21] Success   : Scipt Action : LINEBREAK 
+[04/20/21] Success   : int experience
+[04/20/21] Success   : Scipt Action : CREATE INT experience
+[04/20/21] Success   : int level
+[04/20/21] Success   : Scipt Action : CREATE INT level
+[04/20/21] Success   : int damage
+[04/20/21] Success   : Scipt Action : CREATE INT damage
+[04/20/21] Success   : int health
+[04/20/21] Success   : Scipt Action : CREATE INT health
+[04/20/21] Success   : int potions
+[04/20/21] Success   : Scipt Action : CREATE INT potions
+[04/20/21] Success   : int x
+[04/20/21] Success   : Scipt Action : CREATE INT x
+[04/20/21] Success   : int y
+[04/20/21] Success   : Scipt Action : CREATE INT y
+[04/20/21] Success   : string name
+[04/20/21] Success   : Scipt Action : CREATE STRING name
+[04/20/21] Success   : string class
+[04/20/21] Success   : Scipt Action : CREATE STRING class
+[04/20/21] Success   : write [Setting player variables...]
+[04/20/21] Success   : Scipt Action : COUT Setting player variables...
+[04/20/21] Success   : break
+[04/20/21] Success   : Scipt Action : LINEBREAK 
+[04/20/21] Success   : int experience = 0
+[04/20/21] Success   : Scipt Action : SET INT experience
+[04/20/21] Success   : int level = 1
+[04/20/21] Success   : Scipt Action : SET INT level
+[04/20/21] Success   : int damage = 1
+[04/20/21] Success   : Scipt Action : SET INT damage
+[04/20/21] Success   : int health = 10
+[04/20/21] Success   : Scipt Action : SET INT health
+[04/20/21] Success   : int potions = 5
+[04/20/21] Success   : Scipt Action : SET INT potions
+[04/20/21] Success   : int x = 0
+[04/20/21] Success   : Scipt Action : SET INT x
+[04/20/21] Success   : int y = 0
+[04/20/21] Success   : Scipt Action : SET INT y
+[04/20/21] Success   : string name = "Unnamed Hero"
+[04/20/21] Success   : Scipt Action : SET STRING name
+[04/20/21] Success   : string class = "Fighter"
+[04/20/21] Success   : Scipt Action : SET STRING class
+[04/20/21] Success   : write [Creating game variables...]
+[04/20/21] Success   : Scipt Action : COUT Creating game variables...
+[04/20/21] Success   : break
+[04/20/21] Success   : Scipt Action : LINEBREAK 
+[04/20/21] Success   : string location_description
+[04/20/21] Success   : Scipt Action : CREATE STRING location_description
+[04/20/21] Success   : string location_name
+[04/20/21] Success   : Scipt Action : CREATE STRING location_name
+[04/20/21] Success   : string opt_examine
+[04/20/21] Success   : Scipt Action : CREATE STRING opt_examine
+[04/20/21] Success   : write [Setting game variables...]
+[04/20/21] Success   : Scipt Action : COUT Setting game variables...
+[04/20/21] Success   : string location_description = "You are in a dark, dry room and you can smell decay all around you. After a quick look around, you notice what appears to be tombs around you and a few bones scattered around."
+[04/20/21] Success   : Scipt Action : SET STRING location_description
+[04/20/21] Success   : string location_name = "Mysterious Dark Room"
+[04/20/21] Success   : Scipt Action : SET STRING location_name
+[04/20/21] Success   : string opt_examine = "Examine"
+[04/20/21] Success   : Scipt Action : SET STRING opt_examine
+[04/20/21] Success   : func set_title "RPG Sample Game"
+[04/20/21] Success   : Scipt Action : CALL FUNCTION set_title
+[04/20/21] Success   : Scipt Action : SET TITLE RPG Sample Game
+[04/20/21] Success   : call draw.chs
+[04/20/21] Success   : Scipt Action : CALLSCRIPT draw.chs
+[04/20/21] Success   : clear
+[04/20/21] Success   : Scipt Action : CLEAR 
+[04/20/21] Success   : TextColor = yellow
+[04/20/21] Success   : Scipt Action : SETCOLOR 
+[04/20/21] Success   : write [oOo=====(]
+[04/20/21] Success   : Scipt Action : COUT oOo=====(
+[04/20/21] Success   : write var location_name
+[04/20/21] Success   : write [)=====oOo]
+[04/20/21] Success   : Scipt Action : COUT )=====oOo
+[04/20/21] Success   : break
+[04/20/21] Success   : Scipt Action : LINEBREAK 
+[04/20/21] Success   : TextColor = light_gray
+[04/20/21] Success   : Scipt Action : SETCOLOR 
+[04/20/21] Success   : write var location_description
+[04/20/21] Success   : break
+[04/20/21] Success   : Scipt Action : LINEBREAK 
+[04/20/21] Success   : TextColor = yellow
+[04/20/21] Success   : Scipt Action : SETCOLOR 
+[04/20/21] Success   : write [oOo=====(]
+[04/20/21] Success   : Scipt Action : COUT oOo=====(
+[04/20/21] Success   : write var location_name
+[04/20/21] Success   : write [)=====oOo]
+[04/20/21] Success   : Scipt Action : COUT )=====oOo
+[04/20/21] Success   : break
+[04/20/21] Success   : Scipt Action : LINEBREAK 
+[04/20/21] Success   : TextColor = dark_gray
+[04/20/21] Success   : Scipt Action : SETCOLOR 
+[04/20/21] Success   : write [Press "C" to continue]
+[04/20/21] Success   : Scipt Action : COUT Press "C" to continue
+[04/20/21] Success   : break
+[04/20/21] Success   : Scipt Action : LINEBREAK 
+[04/20/21] Success   : GetInput from C
+[04/20/21] Success   : Scipt Action : INPUT 

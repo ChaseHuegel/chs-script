@@ -1,0 +1,704 @@
+<html>
+<body>
+
+<title>CHScript</title>
+
+<h1>CHScript Reference, Examples, and Help</h1>
+<!--<h2><a href="#getting_started">Tutorial: Getting started with CHScript</a></h2>!-->
+<h2><a href="http://www.microsoft.com/en-us/download/details.aspx?id=5555">Download runtimes here!</a></h2>
+
+<br><br>
+<a id="#contents">
+<h1>Table of Contents</h1>
+<hr>
+<h2>1.<a href="#functions">Functions</a></h2>
+<h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.<a href="#sub-functions">Sub-Functions</a></h3>
+<hr>
+<h2>2.<a href="#variables">Variables</a></h2>
+<hr>
+<h2>2.<a href="#loops_ifs">Loops & Ifs</a></h2>
+<h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.<a href="#if_statement">If statements</a></h3>
+<h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.<a href="#while_loop">While Loops</a></h3>
+<h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.<a href="#script_loop">Script Loops</a></h3>
+<hr>
+<h2>4.Examples</h2>
+<h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.<a href="#script_loop">Script Loops</a></h3>
+<h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.<a href="#while_loop">While loops</a></h3>
+<h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.<a href="#examples_output">Output</a></h3>
+<h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.<a href="#examples_input">Input</a></h3>
+<h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5.<a href="#examples_math">Math</a></h3>
+<h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6.<a href="#if_statement">If statements</a></h3>
+<h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7.<a href="#variables">Variables</a></h3>
+<hr>
+</a>
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<a id="#functions">
+<h1>Functions</h1>
+<a href="#contents">Return to table of contents</a>
+<p>All functions that can be called are listed below. Functions are called via thier alias
+<br>Main functions, as they are called in CHScript, are functions that are built for the engine but
+<br>are linked to the scripting language as well so they may be used through scripting.
+<br>The functions are listed exactly as they are meant to be called. If you don't spell
+<br>something right, or you use the wrong capitol/lowcases then the function wont be recognized.
+</p>
+<hr>
+<table border="2">
+<th>INT</th>
+<th>STRING</th>
+<th>TEXT</th>
+<th>VAR</th>
+<th>N/A</th>
+<th>?</th>
+<th>FILE</th>
+<tr>
+  <td>A number</td>
+  <td>Text in quotes ""</td>
+  <td>Text in brackets <></td>
+  <td>A variable</td>
+  <td>Can be blank</td>
+  <td>Depends on param 1</td>
+  <td>A filename</td>
+</tr>
+</table>
+
+<br>
+
+<table border="2">
+<th>Function</th>
+<th>Param 1</th>
+<th>Param 2</th>
+<th>Param 3</th>
+<th>Example</th>
+<th>Desciption</th>
+<tr>
+  <td>TextColor</td>
+  <td>INT</td>
+  <td>-</td>
+  <td>-</td>
+  <td>TextColor = 5</td>
+  <td>Sets the text color of following lines</td>
+</tr>
+<tr>
+  <td>func</td>
+  <td>Sub-Function</td>
+  <td>?</td>
+  <td>?</td>
+  <td>func set_title "Hello world!"</td>
+  <td>Sets the title of the window</td>
+</tr>
+<tr>
+  <td>write</td>
+  <td>VAR or TEXT</td>
+  <td>-</td>
+  <td>-</td>
+  <td>write [Hello again!] | write my_variable</td>
+  <td>Outputs text to the window</td>
+</tr>
+<tr>
+  <td>break</td>
+  <td>-</td>
+  <td>-</td>
+  <td>-</td>
+  <td>break</td>
+  <td>Adds a line break/starts a new line</td>
+</tr>
+<tr>
+  <td>load</td>
+  <td>-</td>
+  <td>-</td>
+  <td>-</td>
+  <td>load</td>
+  <td>Loads (a) hard coded file(s)</td>
+</tr>
+<tr>
+  <td>save</td>
+  <td>-</td>
+  <td>-</td>
+  <td>-</td>
+  <td>save</td>
+  <td>Saves (a) hard coded file(s)</td>
+</tr>
+<tr>
+  <td>GetInput</td>
+  <td>N/A or from</td>
+  <td>? VAR</td>
+  <td>N/A</td>
+  <td>GetInput or GetInput from T</td>
+  <td>Waits for input from a specific key</td>
+</tr>
+<tr>
+  <td>log</td>
+  <td>STRING</td>
+  <td>VAR or blank</td>
+  <td>INT</td>
+  <td>log "Logging a success!" blank 1 | log "Logging a number: " my_number 1</td>
+  <td>Writes to the log file</td>
+</tr>
+<tr>
+  <td>call</td>
+  <td>FILE</td>
+  <td>-</td>
+  <td>-</td>
+  <td>call test.chs</td>
+  <td>Opens, and runs a script</td>
+</tr>
+<tr>
+  <td>clear</td>
+  <td>-</td>
+  <td>-</td>
+  <td>-</td>
+  <td>clear</td>
+  <td>Clears the window of all text</td>
+</tr>
+<tr>
+  <td>empty</td>
+  <td>-</td>
+  <td>-</td>
+  <td>-</td>
+  <td>empty</td>
+  <td>Clears the log</td>
+</tr>
+<tr>
+  <td>dump</td>
+  <td>-</td>
+  <td>-</td>
+  <td>-</td>
+  <td>dump</td>
+  <td>Alias of empty; Clears the log</td>
+</tr>
+<tr>
+  <td>pause</td>
+  <td>N/A or for</td>
+  <td>? VAR or INT or seconds</td>
+  <td>? VAR or INT</td>
+  <td>pause | pause for 1000 | pause for seconds 1</td>
+  <td>Pauses the program until any key pressed, or pause for number of milliseconds, or pause for number of seconds</td>
+</tr>
+<tr>
+  <td>inputText</td>
+  <td>-</td>
+  <td>-</td>
+  <td>-</td>
+  <td>inputText</td>
+  <td>Allows the user to input text, which is then stored.</td>
+</tr>
+<tr>
+  <td>showText</td>
+  <td>-</td>
+  <td>-</td>
+  <td>-</td>
+  <td>showText</td>
+  <td>Displays the last text that was typed out</td>
+</tr>
+<tr>
+  <td>math</td>
+  <td>VAR or INT</td>
+  <td>+ - / *</td>
+  <td>VAR or INT</td>
+  <td>math 1 + 2 | math 3 * 2</td>
+  <td>Performs the math operation specified with the numbers specified, stored as last_number and last_math parameters</td>
+</tr>
+<tr>
+  <td>free</td>
+  <td>VAR</td>
+  <td>-</td>
+  <td>-</td>
+  <td>free my_string | del my_int</td>
+  <td>Deletes the variable specified</td>
+</tr>
+<tr>
+  <td>del</td>
+  <td>VAR</td>
+  <td>-</td>
+  <td>-</td>
+  <td>del my_string | del my_int</td>
+  <td>Alias of free; Deletes the specified variable</td>
+</tr>
+<tr>
+  <td>sound</td>
+  <td>play or loop</td>
+  <td>FILE</td>
+  <td>-</td>
+  <td>sound play hurt.wav | sound loop music01.wav</td>
+  <td>Plays the sound specified, or loops the sound specified</td>
+</tr>
+<tr>
+  <td>rand</td>
+  <td>-</td>
+  <td>-</td>
+  <td>-</td>
+  <td>int my_var = rand | TextColor = rand</td>
+  <td>Picks a random value based on the function its being used with. NOTE: This is used as a parameter with functions<br> TODO: Allow you to pick min/max values</td>
+</tr>
+<tr>
+  <td>seed</td>
+  <td>-</td>
+  <td>-</td>
+  <td>-</td>
+  <td>seed</td>
+  <td>Seeds the random number generator; Unless you want the same results repeatedly, you must seed the generator!</td>
+</tr>
+<tr>
+  <td>show_splash</td>
+  <td>-</td>
+  <td>-</td>
+  <td>-</td>
+  <td>show_splash</td>
+  <td>Shows the splash "image" for the engine, also shows the copyright for Chase H</td>
+</tr>
+<tr>
+  <td>version</td>
+  <td>-</td>
+  <td>-</td>
+  <td>-</td>
+  <td>version</td>
+  <td>Outputs your current version of the engine</td>
+</tr>
+</table>
+</a>
+
+<br><br><br><br>
+
+<a id="#sub-functions">
+<h1>Sub-Functions</h1>
+<a href="#contents">Return to table of contents</a>
+<p>All sub-functions that can be called are listed below. Sub-functions are called via "func"
+<br>Sub-functions are functions that are specific to the scripting language. These may be built
+<br>in C++ functions, or they may be a function thats part of the engine that you only use in scripting.
+<br>The functions are listed exactly as they are meant to be called. If you don't spell
+<br>something right, or you use the wrong capitol/lowcases then the function wont be recognized.
+</p>
+<hr>
+<table border="2">
+<th>INT</th>
+<th>STRING</th>
+<th>TEXT</th>
+<th>VAR</th>
+<th>N/A</th>
+<th>?</th>
+<th>FILE</th>
+<tr>
+  <td>A number</td>
+  <td>Text in quotes ""</td>
+  <td>Text in brackets <></td>
+  <td>A variable</td>
+  <td>Can be blank</td>
+  <td>Depends on param 1</td>
+  <td>A filename</td>
+</tr>
+</table>
+
+<br>
+
+<table border="2">
+<th>Function</th>
+<th>Param 1</th>
+<th>Param 2</th>
+<th>Param 3</th>
+<th>Example</th>
+<th>Desciption</th>
+<tr>
+  <td>allfunctions</td>
+  <td>-</td>
+  <td>-</td>
+  <td>-</td>
+  <td>func allfunctions</td>
+  <td>Outputs all functions, parameters, and sub-functions</td>
+</tr>
+<tr>
+  <td>mouse</td>
+  <td>set or rand</td>
+  <td>? INT</td>
+  <td>? INT</td>
+  <td>mouse set 100 100 | mouse rand</td>
+  <td>Moves the cursor to the specified x and y coords, or to a random spot</td>
+</tr>
+<tr>
+  <td>set_title</td>
+  <td>STRING</td>
+  <td>-</td>
+  <td>-</td>
+  <td>func set_title "This is a title!"</td>
+  <td>Sets the window's title</td>
+</tr>
+<tr>
+  <td>run</td>
+  <td>FILE</td>
+  <td>-</td>
+  <td>-</td>
+  <td>func run notepad</td>
+  <td>Runs the specified program; <br>Your program will pause until the program you opened has been closed.</td>
+</tr>
+</table>
+</a>
+
+<br><br><br><br>
+
+<a id="#variables">
+<h1>Variables</h1>
+<a href="#contents">Return to table of contents</a>
+<hr>
+<p>There are only two variables in CHScript. More will be added in the future, however the
+<br>ones available are currrently: Integers and Strings. You create variables, set variables, and
+<br>use variables very similarly to C++. However, all variables are global and permanent. The
+<br>only way to remove a variable is via the "free" function, or it's alias "del". Unlike C++ you
+<br>can't create a variable, and set it's value at the same time you must do it seperate.
+<br>NOTE: It is best to remove uneeded variables; More variables means slower access time!
+</p>
+<h3>Creating, Setting, and Using Variables</h3>
+<div style="height:240px;width:400px;border:1px solid #ccc;font:16px/26px Georgia, Garamond, Serif;overflow:auto;">
+#Creating a integer and a string
+<br>int my_int
+<br>string my_string
+<br>
+<br>#Setting the values for my_int and my_string
+<br>int my_int = 3
+<br>string my_string = "Hello!"
+<br>
+<br>#Increment my_int by 2
+<br>int my_int += 2
+<br>#Decrement my_int by 1
+<br>int my_int -= 1
+<br>
+<br>#Ouput my_string
+<br>write var my_string
+<br>#Get some text input
+<br>inputText
+<br>#Assign the input text to my_string
+<br>string my_string = last_text
+<br>#Output my_string again
+<br>write var my_string
+<br>
+<br>#Perform some math
+<br>#Add 2 to my_int
+<br>math my_int + 2
+<br>#Multiply the previous product by 2
+<br>math last_math * 2
+<br>
+<br>#Assign the previous product to my_int
+<br>my_int = last_math
+<br>
+<br>#Output my_int
+<br>write var my_int
+</div>
+</p>
+
+<br><br><br><br>
+
+<a id="#loops_ifs">
+<h1>Loops & Ifs</h1>
+<a href="#contents">Return to table of contents</a>
+<p>If statements are very simple, and run a script if they are correct. While loops too are very simple, and 
+<br>keep running a script as long as the loop is correct. If and while loops use variables for checking, and
+<br>a filename for the script they run. There are also script loops, which is when a script calls itself
+<br>somewhere in it's code causing it to run itself repeatedly.
+</p>
+<hr>
+
+<a id="#if_statement">
+<h2>If statements</h2>
+<a href="#contents">Return to table of contents</a>
+<p>If statements compare two variables. These may be a integer that you created being compared to
+<br>a number you specify, two integers you created being compared, a integer and a randomly chosen
+<br>number, a random number and a random number, and so on. If statements compare numbers only
+<br>currently. If statements will be expanded upon in the future.
+<hr>
+
+<table border="2">
+<th>Symbol</th>
+<th>Usage</th>
+<th>Operation</th>
+<tr>
+  <td>></td>
+  <td>if x > 10 :: test.chs</td>
+  <td>Greater than</td>
+</tr>
+<tr>
+  <td><</td>
+  <td>if x < 10 :: test.chs</td>
+  <td>Less than</td>
+</tr>
+<tr>
+  <td>>=</td>
+  <td>if x >= 10 :: test.chs</td>
+  <td>Greater than or equal to</td>
+</tr>
+<tr>
+  <td><=</td>
+  <td>if x <= 10 :: test.chs</td>
+  <td>Less than or equal to</td>
+</tr>
+<tr>
+  <td>=</td>
+  <td>if x = 10 :: test.chs</td>
+  <td>Equal to</td>
+</tr>
+<tr>
+  <td>!=</td>
+  <td>if x != 10 :: test.chs</td>
+  <td>Not equal to</td>
+</tr>
+</table>
+
+<h3>If statement example</h3>
+<div style="height:240px;width:400px;border:1px solid #ccc;font:16px/26px Georgia, Garamond, Serif;overflow:auto;">
+#Creating a integer
+<br>int my_int
+<br>
+<br>#Setting the value of the integer to a random number
+<br>int my_int = rand
+<br>
+<br>#Checking if the integer is less than, or equal to 50
+<br>#If it is, then call the script 'got_it.chs'
+<br>if my_int <= 50 :: got_it.chs
+</div>
+</p>
+<hr>
+
+<a id="#while_loop">
+<h2>While Loops</h2>
+<a href="#contents">Return to table of contents</a>
+<p>While loops perform a script repeatedly as long as the comparison of two variables is true. 
+<br>These may be a integer that you created being compared to a number you specify, two integers 
+<br>you created being compared, a integer and a randomly chosen number, a random number
+<br>and a random number, and so on. While loops compare numbers only currently. The while
+<br>loop is basicly a if statement that repeats itself.
+<hr>
+
+<table border="2">
+<th>Symbol</th>
+<th>Usage</th>
+<th>Operation</th>
+<tr>
+  <td>></td>
+  <td>while x > 10 :: test.chs</td>
+  <td>Greater than</td>
+</tr>
+<tr>
+  <td><</td>
+  <td>while x < 10 :: test.chs</td>
+  <td>Less than</td>
+</tr>
+<tr>
+  <td>>=</td>
+  <td>while x >= 10 :: test.chs</td>
+  <td>Greater than or equal to</td>
+</tr>
+<tr>
+  <td><=</td>
+  <td>while x <= 10 :: test.chs</td>
+  <td>Less than or equal to</td>
+</tr>
+<tr>
+  <td>=</td>
+  <td>while x = 10 :: test.chs</td>
+  <td>Equal to</td>
+</tr>
+<tr>
+  <td>!=</td>
+  <td>while x != 10 :: test.chs</td>
+  <td>Not equal to</td>
+</tr>
+</table>
+
+<h3>While loop example</h3>
+<div style="height:240px;width:400px;border:1px solid #ccc;font:16px/26px Georgia, Garamond, Serif;overflow:auto;">
+#Creating a integer
+<br>int my_int
+<br>
+<br>#Setting the value of the integer
+<br>int my_int = 2
+<br>
+<br>#While my_int is less then 50, repeat while_1.chs
+<br>while my_int <= 50 :: while_1.chs
+<br>
+<br>#Then, inside while_1.chs we can put
+<br>int my_int += 1
+<br>#This means that everytime while_1.chs is called,
+<br>#we will increase my_int by 1. So, once my_int reaches
+<br>#51 it will stop looping
+</div>
+</p>
+<hr>
+
+<a id="#script_loop">
+<h2>Script Loops</h2>
+<a href="#contents">Return to table of contents</a>
+<p>Script looping is very important if your making something like a game.
+<br>Script looping is where you have a script call itself (Generally at the
+<br>very end of the script) to cause it to loop itself forever. Script loops are best
+<br>used for a overarching loop that calls other scripts, and performs all the
+<br>main functions of your game. Such as for example you would have it call
+<br>a script that updates enemy monsters, then a script to draw text on the screen that
+<br>represents those monsters, then another script that handles input from the player,
+<br>and so on. Script looping can be used for as a while loop as well through the use
+<br>of script calls and if checks. While looping is a compact way of doing that though.
+<hr>
+
+<h3>Script loop example</h3>
+<div style="height:240px;width:400px;border:1px solid #ccc;font:16px/26px Georgia, Garamond, Serif;overflow:auto;">
+#Clear the screen
+<br>clear
+<br>
+<br>#Write hello world!!!!!
+<br>write [Hello world!!!!!]
+<br>
+<br>#Run the main script; The same one
+<br>#we are in, causing a loop.
+<br>call main.chs
+</div>
+</p>
+<hr>
+
+<br><br><br><br>
+
+<a id="#examples_output">
+<h1>Output</h1>
+<a href="#contents">Return to table of contents</a>
+<p>There are four output functions, they are: write, showInput, TextColor, and break
+<br>write will write variables, or text to the window. showInput will display the last text input that
+<br>was recieved via inputText. break will start a new line, and TextColor will set the color of
+<br>all output following it.
+<hr>
+
+<h3>Output example</h3>
+<div style="height:240px;width:400px;border:1px solid #ccc;font:16px/26px Georgia, Garamond, Serif;overflow:auto;">
+#Create a integer
+<br>int my_int
+<br>#Set the value of my_int to a random number
+<br>int my_int = rand
+<br>
+<br>#Output 'Hello World!'
+<br>write [Hello world!]
+<br>#New line
+<br>break
+<br>
+<br>#More writing
+<br>write [The value of my_int is ]
+<br>#Set the text color to 2 (Green)
+<br>TextColor = 2
+<br>#Output my_int
+<br>write var my_int
+<br>break
+<br>#Pause until we recieve any key press
+<br>pause
+</div>
+</p>
+<hr>
+
+<br><br><br><br>
+
+<a id="#examples_input">
+<h1>Input</h1>
+<a href="#contents">Return to table of contents</a>
+<p>There are four output functions, they are: write, showInput, TextColor, and break
+<br>write will write variables, or text to the window. showInput will display the last text input that
+<br>was recieved via inputText. break will start a new line, and TextColor will set the color of
+<br>all output following it.
+<hr>
+
+<h3>Input example</h3>
+<div style="height:240px;width:400px;border:1px solid #ccc;font:16px/26px Georgia, Garamond, Serif;overflow:auto;">
+#Create a string, this will be a empty one.
+<br>#So, we wont set the value.
+<br>string my_string
+<br>
+<br>#Tell the user to enter thier first name
+<br>write [Please enter your fist name: ]
+<br>#Start recieving text input
+<br>inputText
+<br>
+<br>#Start a new line
+<br>break
+<br>
+<br>#Tell the user hello
+<br>write [Hello ]
+<br>
+<br>#Show the input we recieved
+<br>showInput
+<br>
+<br>#Ask how thier day was
+<br>write [, how was your day? I hope it was good.]
+<br>
+<br>#Start a new line
+<br>break
+<br>
+<br>#Tell the user to press T to exit
+<br>write [Press T to exit.]
+<br>#Wait for input from the key "T"
+<br>GetInput from T
+</div>
+</p>
+<hr>
+
+<br><br><br><br>
+
+<a id="#examples_math">
+<h1>Math</h1>
+<a href="#contents">Return to table of contents</a>
+<p>There is a single master math function. When you call the function you specify two variables and a operation.
+<br>These two variables may be intergers (int), numbers you choose, rand, last_math, or last_number.
+<br>The operation is either adding ( + ), subtracting ( - ), multiplying ( * ), or dividing ( / ). You can also do
+<br>incrementing or decrementing of integers when you set thier value, you simply use "-=" or "+=" instead of
+<br>a equal ( = ) sign followed by the amount to increment or decrement. A example script can be found below;
+<br>the example script shows all four operations and incrementing & decrementing.
+<hr>
+
+<h3>Math example</h3>
+<div style="height:240px;width:800px;border:1px solid #ccc;font:16px/26px Georgia, Garamond, Serif;overflow:auto;">
+#Create int a
+<br>int a
+<br>#Set the value of int a to a random number
+<br>int a = rand
+<br>
+<br>#Display int a
+<br>write var a
+<br>break
+<br>
+<br>#Adding 2
+<br>math a + 2
+<br>#Set the value of a to the last math problem we did
+<br>int a = last_math
+<br>
+<br>#Subtracting 1
+<br>math a - 1
+<br>#Set the value of a to the last math problem we did
+<br>int a = last_math
+<br>
+<br>#Multiplication by 3
+<br>math a * 3
+<br>#Set the value of a to the last math problem we did
+<br>int a = last_math
+<br>
+<br>#Division by 2
+<br>math a / 2
+<br>#Set the value of a to the last math problem we did
+<br>int a = last_math
+<br>
+<br>#Display int a after all the math is done
+<br>write [After adding 2, subtracting 1, multiplying by 3, then dividing by 2 I got: ]
+<br>write var a
+<br>break
+<br>
+<br>#Increment int a by 1
+<br>int a += 1
+<br>#Decrement int a by 3
+<br>int a -= 3
+<br>
+<br>write [After incrementing by 1, then decrementing by 3 I got: ]
+<br>write var a
+<br>break
+<br>
+<br>pause
+</div>
+</p>
+<hr>
+
+<hr>
+<div id="footer" style="background-color:#808080;clear:both;text-align:center;">Copyright &copy; Chase H.</div>
+
+</body>
+</html>
